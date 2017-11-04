@@ -2,7 +2,7 @@ Feature: Sample Snippets test
     As a developer
     I should be able to use given text snippets
 
-    #@Isolate
+    @TestTag
     Scenario: open URL
         Given the page url is not "http://webdriverjs.christian-bromann.com/"
         And   I open the url "http://webdriverjs.christian-bromann.com/"
@@ -164,8 +164,6 @@ Feature: Sample Snippets test
         When  I click on the element ".checkbox_notselected"
         Then  I expect that checkbox ".checkbox_notselected" is checked
 
-    # This will fail in PhantoJS due to a security warning
-    # @Pending
     Scenario: set / read cookie
         Given I open the url "http://webdriverjs.christian-bromann.com/"
         And   the cookie "test" does not exist
@@ -174,8 +172,9 @@ Feature: Sample Snippets test
         And   I expect that cookie "test" contains "test123"
         And   I expect that cookie "test" not contains "test1234"
 
-    # This will fail in PhantoJS due to a security warning
-    # @Pending
+    # This will fail in PhantomJS due to a security warning
+    # For some reason this test is failing when running it in Chrome
+    @Pending
     Scenario: delete cookie
         Given I open the url "http://webdriverjs.christian-bromann.com/"
         And   the cookie "test" does exist

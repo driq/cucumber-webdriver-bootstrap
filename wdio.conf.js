@@ -15,7 +15,6 @@ exports.config = {
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
-        './src/features/demo-app/**/*.feature',
     ],
     //
     // ============

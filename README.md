@@ -1,7 +1,7 @@
-Cucumber Boilerplate
+Driq Cucumber Boilerplate
 ====================
 
-[![Build Status](https://travis-ci.org/webdriverio/cucumber-boilerplate.svg?branch=master)](https://travis-ci.org/webdriverio/cucumber-boilerplate) [![Dependency Status](https://www.versioneye.com/user/projects/58932d83b166b5004053c63c/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58932d83b166b5004053c63c) [![Code Climate](https://codeclimate.com/github/webdriverio/cucumber-boilerplate/badges/gpa.svg)](https://codeclimate.com/github/webdriverio/cucumber-boilerplate) [![Test Coverage](https://codeclimate.com/github/webdriverio/cucumber-boilerplate/badges/coverage.svg)](https://codeclimate.com/github/webdriverio/cucumber-boilerplate/coverage)
+Fork of https://github.com/webdriverio/cucumber-boilerplate/
 
 ***
 
@@ -17,7 +17,7 @@ Although this project works fine with NPM we recommend to use Yarn (>= 1.0.0) in
 
 Choose one of the following options:
 
-1. Download the latest stable release [here](https://github.com/webdriverio/cucumber-boilerplate/archive/master.zip) or clone the git repo — `git clone https://github.com/webdriverio/cucumber-boilerplate.git`
+1. Download the latest stable release [here](https://github.com/driq/cucumber-webdriver-bootstrap/archive/master.zip) or clone the git repo — `git clone https://github.com/driq/cucumber-webdriver-bootstrap.git`
 
 2. Then:
 - Copy the files to your project into a directory like `/integrationtests` (note the hidden files!)
@@ -91,7 +91,7 @@ _please note_ The WDIO runner uses the configuration file `wdio.conf.js` by defa
 
 # Configurations
 
-To configure your tests, checkout the [`wdio.conf.js`](https://github.com/webdriverio/cucumber-boilerplate/blob/master/wdio.conf.js) file in your test directory. It comes with a bunch of documented options you can choose from.
+To configure your tests, checkout the [`wdio.conf.js`](https://github.com/driq/cucumber-webdriver-bootstrap/blob/master/wdio.conf.js) file in your test directory. It comes with a bunch of documented options you can choose from.
 
 ## Environment-specific configurations
 
@@ -195,7 +195,7 @@ Scenario: check if username is present
 
 # List of predefined steps
 
-Check out all predefined snippets. You can see how they get used in [`sampleSnippets.feature`](https://github.com/webdriverio/cucumber-boilerplate/blob/master/src/features/sampleSnippets.feature).
+Check out all predefined snippets. You can see how they get used in [`sampleSnippets.feature`](https://github.com/driq/cucumber-webdriver-bootstrap/blob/master/src/features/sampleSnippets.feature).
 
 ## Given steps
 
