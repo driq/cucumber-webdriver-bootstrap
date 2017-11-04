@@ -146,7 +146,7 @@ Feature: Sample Snippets test
         And   I expect that element ".red" is not 103px tall
 
     # For some reason this test is failing when running it in the Travis VM
-    @Pending
+    # @Pending
     Scenario: check offset
         Given I open the url "http://webdriverjs.christian-bromann.com/"
         And   the element ".red" is positioned at 15px on the x axis
@@ -165,7 +165,7 @@ Feature: Sample Snippets test
         Then  I expect that checkbox ".checkbox_notselected" is checked
 
     # This will fail in PhantoJS due to a security warning
-    @Pending
+    # @Pending
     Scenario: set / read cookie
         Given I open the url "http://webdriverjs.christian-bromann.com/"
         And   the cookie "test" does not exist
@@ -175,7 +175,7 @@ Feature: Sample Snippets test
         And   I expect that cookie "test" not contains "test1234"
 
     # This will fail in PhantoJS due to a security warning
-    @Pending
+    # @Pending
     Scenario: delete cookie
         Given I open the url "http://webdriverjs.christian-bromann.com/"
         And   the cookie "test" does exist

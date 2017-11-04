@@ -5,7 +5,7 @@
  */
 module.exports = (screenWidth, screenHeight) => {
     browser.windowHandleSize({
-        width: parseInt(screenWidth, 10),
-        height: parseInt(screenHeight, 10),
+        width: parseInt(screenWidth, 1),
+        height: parseInt(screenHeight, 1),
     });
 };
