@@ -10,8 +10,7 @@ import checkDimension from '../support/check/checkDimension';
 import checkEqualsText from '../support/check/checkEqualsText';
 import checkFocus from '../support/check/checkFocus';
 import checkInURLPath from '../support/check/checkInURLPath';
-import checkIsOpenedInNewWindow from
-    '../support/check/checkIsOpenedInNewWindow';
+import checkIsOpenedInNewWindow from '../support/check/checkIsOpenedInNewWindow';
 import checkModal from '../support/check/checkModal';
 import checkModalText from '../support/check/checkModalText';
 import checkNewWindow from '../support/check/checkNewWindow';
@@ -84,7 +83,8 @@ defineSupportCode(({ Then }) => {
 
     Then(/^I expect that element "([^"]*)?" is( not)* focused$/, checkFocus);
 
-    Then(/^I wait on element "([^"]*)?"(?: for (\d+)ms)*(?: to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/,
+    Then(
+        /^I wait on element "([^"]*)?"(?: for (\d+)ms)*(?: to( not)* (be checked|be enabled|be selected|be visible|contain a text|contain a value|exist))*$/,
         {
             wrapperOptions: {
                 retry: 3,

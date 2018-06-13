@@ -11,27 +11,15 @@ Boilerplate project to run WebdriverIO tests with [Cucumber](https://cucumber.io
 
 - Node version 4.8 or higher
 
-Although this project works fine with NPM we recommend to use Yarn (>= 1.0.0) instead,  due to its speed & solid dependency locking mechanism. To keep things simple we use yarn in this guide, but feel free to replace this with NPM if that is what you are using.
-
 ## Quick start
 
 Choose one of the following options:
 
 1. Download the latest stable release [here](https://github.com/driq/cucumber-webdriver-bootstrap/archive/master.zip) or clone the git repo — `git clone https://github.com/driq/cucumber-webdriver-bootstrap.git`
 
-2. Then:
-- Copy the files to your project into a directory like `/integrationtests` (note the hidden files!)
+2. Install the dependencies (`npm install`)
 
-3. Clean the project (Optional):
-- *On OSX/Linux:*
--- Run `yarn run clean`
-
-- *On Windows:*
--- Remove the directories `/.git`, `/.github`, `/demo-app` & `/test`
--- Remove the files `.travis.yml`, `jest.json` & `wdio.BUILD.conf.js`
--- Remove all the demo features from the `/src/features` directory
-
-4. Install the dependencies (`yarn install`)
+3. Run the tests (`npm run wdio` or `npm test`)
 
 Now you are ready to write your own features.
 
@@ -75,16 +63,10 @@ query after doing a search. As you can see, it is pretty simple and understandab
 
 # How to run the test
 
-Start the local web server:
-
-```sh
-$ yarn run local-webserver
-```
-
 To run your tests just call the [WDIO runner](http://webdriver.io/guide/testrunner/gettingstarted.html):
 
 ```sh
-$ yarn run wdio
+$ npm run wdio
 ```
 
 _please note_ The WDIO runner uses the configuration file `wdio.conf.js` by default.
@@ -119,14 +101,14 @@ Your environment-specific config file will get merged into the default config fi
 To run a test in a specific environment just add the desired configuration file as the first parameter:
 
 ```sh
-$ yarn run wdio wdio.STAGING.conf.js
+$ npm run wdio wdio.STAGING.conf.js
 ```
 
 # Running single feature
 Sometimes its useful to only execute a single feature file, to do so use the following command:
 
 ```sh
-$ yarn run wdio -- --spec ./test/features/select.feature
+$ npm run wdio -- --spec ./test/features/select.feature
 ```
 
 
@@ -142,7 +124,7 @@ Feature: ...
 To run only the tests with specific tag(s) use the `--cucumberOpts.tagExpression=` parameter like so:
 
 ```sh
-$ yarn run wdio -- --cucumberOpts.tagExpression=@Tag,@AnotherTag
+$ npm run wdio -- --cucumberOpts.tagExpression=@Tag,@AnotherTag
 ```
 
 You can add multiple tags separated by a comma

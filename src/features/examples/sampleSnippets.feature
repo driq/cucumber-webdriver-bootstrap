@@ -2,7 +2,6 @@ Feature: Sample Snippets test
     As a developer
     I should be able to use given text snippets
 
-    @TestTag
     Scenario: open URL
         Given the page url is not "http://webdriverjs.christian-bromann.com/"
         And   I open the url "http://webdriverjs.christian-bromann.com/"
@@ -15,10 +14,11 @@ Feature: Sample Snippets test
         Then  I expect that the url is "http://webdriverjs.christian-bromann.com/"
         And   I expect that the url is not "http://google.com"
 
+    @TestTag
     Scenario: click on link
         Given the title is not "two"
         And   I open the url "http://webdriverjs.christian-bromann.com/"
-        When  I click on the link "two"
+        When  I click on the element "//a[contains(., 'tw')]"
         Then  I expect that the title is "two"
 
     Scenario: click on button
