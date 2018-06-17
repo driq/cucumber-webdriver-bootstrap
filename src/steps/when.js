@@ -6,11 +6,13 @@ import closeLastOpenedWindow from '../support/action/closeLastOpenedWindow';
 import deleteCookie from '../support/action/deleteCookie';
 import dragElement from '../support/action/dragElement';
 import focusLastOpenedWindow from '../support/action/focusLastOpenedWindow';
+import fillInputFieldWithVariable from '../support/action/fillInputFieldWithVariable';
 import handleModal from '../support/action/handleModal';
 import moveToElement from '../support/action/moveToElement';
 import pause from '../support/action/pause';
 import pressButton from '../support/action/pressButton';
 import scroll from '../support/action/scroll';
+import saveValueOfElement from '../support/action/saveValueOfElement';
 import selectOption from '../support/action/selectOption';
 import selectOptionByIndex from '../support/action/selectOptionByIndex';
 import setCookie from '../support/action/setCookie';
@@ -21,6 +23,10 @@ import submitForm from '../support/action/submitForm';
 
 defineSupportCode(({ When }) => {
     When(/^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/, clickElement);
+
+    When(/^I save the value of the "([^"]*)?" element as "([^"]*)?"$/, saveValueOfElement);
+
+    When(/^I fill the inputfield "([^"]*)?" with variable "([^"]*)?"$/, fillInputFieldWithVariable);
 
     When(/^I (add|set) "([^"]*)?" to the inputfield "([^"]*)?"$/, setInputField);
 

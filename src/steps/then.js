@@ -96,4 +96,9 @@ defineSupportCode(({ Then }) => {
     Then(/^I expect that a (alertbox|confirmbox|prompt) is( not)* opened$/, checkModal);
 
     Then(/^I expect that a (alertbox|confirmbox|prompt)( not)* contains the text "([^"]*)?"$/, checkModalText);
+
+    Then(/^I expect that field "([^"]*)?" contains value "([^"]*)?"$/, (field, value) => {
+        const fieldValue = browser.getValue(field);
+        expect(fieldValue).to.equal(value);
+    });
 });
