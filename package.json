@@ -36,9 +36,6 @@
     "wdio-spec-reporter": "^0.1",
     "webdriverio": "^4.7"
   },
-  "peerDependencies": {
-    "selenium-standalone": "https://github.com/driq/selenium-standalone/archive/selenium-3.12.tar.gz"
-  },
   "devDependencies": {
     "eslint": "^4.10.0",
     "eslint-config-airbnb-base": "^12.1.0",
